@@ -1,6 +1,5 @@
 import Timer from './Timer';
 import Notiflix from 'notiflix';
-//import 'notiflix';
 import flatpickr from 'flatpickr';
 import 'flatpickr/dist/flatpickr.min.css';
 import '../sass/common.scss';

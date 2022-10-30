@@ -32,4 +32,3 @@ function onButtonStopClick(
   buttonStartEl.removeAttribute('disabled');
   clearInterval(colorChangeInterval);
 }
-
