@@ -1,14 +1,14 @@
 import '../sass/common.scss';
 import '../sass/01-color-switcher.scss';
 
-ref = {
+const ref = {
   buttonStartEl: document.querySelector('[data-start]'),
   buttonStopEl: document.querySelector('[data-stop]'),
 };
 
 let colorChangeInterval = null;
 
-ref.buttonStartEl.addEventListener('click', evt => {
+this.ref.buttonStartEl.addEventListener('click', evt => {
   colorChangeInterval = onButtonStartClick(evt);
 });
 ref.buttonStopEl.addEventListener('click', onButtonStopClick);
