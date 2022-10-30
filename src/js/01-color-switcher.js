@@ -8,7 +8,7 @@ const ref = {
 
 let colorChangeInterval = null;
 
-this.ref.buttonStartEl.addEventListener('click', evt => {
+ref.buttonStartEl.addEventListener('click', evt => {
   colorChangeInterval = onButtonStartClick(evt);
 });
 ref.buttonStopEl.addEventListener('click', onButtonStopClick);
