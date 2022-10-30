@@ -1,17 +1,17 @@
 import '../sass/common.scss';
 import '../sass/01-color-switcher.scss';
 
-ref1 = {
+ref = {
   buttonStartEl: document.querySelector('[data-start]'),
   buttonStopEl: document.querySelector('[data-stop]'),
 };
 
 let colorChangeInterval = null;
 
-ref1.buttonStartEl.addEventListener('click', evt => {
+ref.buttonStartEl.addEventListener('click', evt => {
   colorChangeInterval = onButtonStartClick(evt);
 });
-ref1.buttonStopEl.addEventListener('click', onButtonStopClick);
+ref.buttonStopEl.addEventListener('click', onButtonStopClick);
 
 function getRandomHexColor() {
   return `#${Math.floor(Math.random() * 16777215).toString(16)}`;
@@ -26,7 +26,7 @@ function onButtonStartClick(evt) {
 
 function onButtonStopClick(
   evt,
-  buttonStartEl = ref1.buttonStartEl,
+  buttonStartEl = ref.buttonStartEl,
   interval = colorChangeInterval
 ) {
   buttonStartEl.removeAttribute('disabled');
