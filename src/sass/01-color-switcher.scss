@@ -1,0 +1,18 @@
+.button-container {
+  position: absolute;
+  top: calc(50% - 50px);
+  left: calc(50% - 150px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: 40px;
+  height: 100px;
+  width: 300px;
+}
+
+.button-container > button {
+  font-size: 20px;
+  padding: 10px 20px;
+  border-radius: 5px;
+  border-color: inherit;
+}
